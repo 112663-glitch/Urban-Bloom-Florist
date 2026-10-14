@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Urban Bloom Florist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Urban Bloom Florist</h1>
+    <p>Fresh Flowers, Beautiful Moments</p>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="flowers.html">Flowers</a>
+        <a href="weddings.html">Weddings & Events</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="delivery.html">Delivery & FAQs</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="contact-intro">
+        <h2>Get in Touch</h2>
+        <p>
+            Have a question about our flowers, delivery,
+            weddings or corporate services?
+        </p>
+        <p>
+            Send us an enquiry and let us know
+            how we can help.
+        </p>
+    </section>
+
+    <section class="contact-section">
+        <h2>Send an Enquiry</h2>
+        <p>Complete the form below to prepare your enquiry.</p>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName"
+                       name="fullName"
+                       placeholder="Enter your full name"
+                       autocomplete="name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       autocomplete="email"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                       name="phone"
+                       placeholder="Enter your phone number"
+                       autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryType">Enquiry Type *</label>
+                <select id="enquiryType"
+                        name="enquiryType" required>
+                    <option value="">Select an option</option>
+                    <option value="Flower Order">Flower Order</option>
+                    <option value="Wedding & Event">Wedding & Event</option>
+                    <option value="Corporate Flowers">Corporate Flowers</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Tell us about your enquiry"
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Prepare Enquiry
+            </button>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+        </form>
+    </section>
+
+    <section class="contact-details">
+        <h2>Our Contact Details</h2>
+
+        <div class="products">
+            <article>
+                <h3>Location</h3>
+                <p>Auckland, New Zealand</p>
+            </article>
+
+            <article>
+                <h3>Phone</h3>
+                <p>09 000 0001</p>
+            </article>
+
+            <article>
+                <h3>Email</h3>
+                <p>hello@urbanbloom.kiwi</p>
+            </article>
+        </div>
+
+        <p>
+            Contact details are illustrative for this
+            student website prototype.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Urban Bloom Florist | Auckland, New Zealand</p>
+    <p>Phone: 09 000 0001</p>
+    <p>Email: hello@urbanbloom.kiwi</p>
+    <p>&copy; 2026 Urban Bloom Florist</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

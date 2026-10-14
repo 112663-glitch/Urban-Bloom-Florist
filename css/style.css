@@ -1,0 +1,451 @@
+
+/* Urban Bloom Florist - Lavender & Cream Theme */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F0;
+    color: #38313F;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+
+header {
+    background-color: #EEE7F5;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    color: #675080;
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    color: #675080;
+    margin: 8px 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #675080;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #503B66;
+}
+
+/* Main Sections */
+
+main section {
+    padding: 55px 25px;
+    text-align: center;
+}
+
+main h2 {
+    color: #675080;
+    font-size: 30px;
+}
+
+/* Hero Section */
+
+main section:first-child {
+    background-color: #F5EDF8;
+    padding: 90px 25px;
+}
+
+main section:first-child h2 {
+    font-size: 42px;
+}
+
+/* Buttons */
+
+main a {
+    display: inline-block;
+    background-color: #675080;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+main a:hover {
+    background-color: #503B66;
+}
+
+main a:focus-visible,
+nav a:focus-visible {
+    outline: 3px solid #675080;
+    outline-offset: 4px;
+}
+
+/* Featured Flower Cards */
+
+article {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #FFFFFF;
+    width: 280px;
+    min-height: 190px;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 12px;
+    border: 1px solid #EEE7F5;
+    box-shadow: 0 4px 15px rgba(70, 50, 90, 0.08);
+}
+
+article h3 {
+    color: #675080;
+}
+
+/* Footer */
+
+footer {
+    background-color: #675080;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main section:first-child h2 {
+        font-size: 30px;
+    }
+
+    article {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        margin: 15px auto;
+    }
+}
+
+/* Featured Flower Images */
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.products article {
+    margin: 0;
+    overflow: hidden;
+}
+
+.products img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.products .price {
+    color: #675080;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products article {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* Flowers Page */
+
+.flower-intro {
+    background-color: #F5EDF8;
+}
+
+.products article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products article .price {
+    margin-top: auto;
+}
+
+.products article a {
+    font-size: 14px;
+    padding: 10px 18px;
+}
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* Weddings & Events Page */
+
+.wedding-intro {
+    background-color: #F5EDF8;
+}
+
+.wedding-services {
+    background-color: #FFF9F0;
+}
+
+.wedding-services .products article {
+    min-height: 260px;
+    justify-content: space-between;
+}
+
+.event-details {
+    background-color: #EEE7F5;
+}
+
+.event-details h3 {
+    color: #675080;
+}
+
+.event-list {
+    list-style: disc;
+    display: inline-block;
+    text-align: left;
+    max-width: 550px;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.event-details p {
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+/* Corporate Flowers Page */
+
+.corporate-intro {
+    background-color: #F5EDF8;
+}
+
+.corporate-services {
+    background-color: #FFF9F0;
+}
+
+.corporate-services .products article {
+    min-height: 260px;
+    justify-content: space-between;
+}
+
+.corporate-benefits {
+    background-color: #EEE7F5;
+}
+
+.corporate-benefits .products article {
+    min-height: 210px;
+}
+
+.corporate-contact {
+    background-color: #FFF9F0;
+}
+
+.corporate-contact p {
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+/* Delivery & FAQs Page */
+
+.delivery-intro {
+    background-color: #F5EDF8;
+}
+
+.delivery-info {
+    background-color: #FFF9F0;
+}
+
+.delivery-info .products article {
+    min-height: 230px;
+}
+
+.faq-section {
+    background-color: #EEE7F5;
+}
+
+.faq-container {
+    max-width: 750px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: white;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #D9CBE5;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 18px 20px;
+    background-color: white;
+    color: #503B66;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #F5EDF8;
+}
+
+.faq-question:focus-visible {
+    outline: 3px solid #675080;
+    outline-offset: -3px;
+}
+
+.faq-question span {
+    font-size: 24px;
+}
+
+.faq-answer {
+    padding: 0 20px 18px;
+    color: #38313F;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.delivery-contact {
+    background-color: #FFF9F0;
+}
+
+.delivery-contact p {
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+/* Contact Page */
+
+.contact-intro {
+    background-color: #F5EDF8;
+}
+
+.contact-section {
+    background-color: #FFF9F0;
+}
+
+#contactForm {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #D9CBE5;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(70, 50, 90, 0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #503B66;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B9A1D0;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+    color: #38313F;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #675080;
+    outline-offset: 2px;
+}
+
+.submit-btn {
+    background-color: #675080;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #503B66;
+}
+
+.submit-btn:focus-visible {
+    outline: 3px solid #675080;
+    outline-offset: 4px;
+}
+
+#formMessage {
+    color: #503B66;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contact-details {
+    background-color: #EEE7F5;
+}
+
+@media (max-width: 600px) {
+    #contactForm {
+        padding: 20px;
+    }
+}
